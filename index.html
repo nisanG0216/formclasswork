@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><html lang="he" dir="rtl">
+</html>
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" method="post">
+        <label for="text">שם משתמש</label>     
+        <input type="text" id="username" name="username" placeholder="הכנס שם" required><br>
+        <label for="email">אימל</label>
+        <input type="email" name="email" required placeholder="name@example.com"><br>
+         <label for="password">סיסמה</label>   
+        <input type="password" name="pwd" placeholder="סיסמה" minlength="8"><br>
+        <label for="number">גיל</label>
+        <input type="number" name="age" min="0" max="120" step="1"><br>
+        <label for="number">מין:</label>
+        <label><input type="radio" name="gender" value="male"> זכר</label>
+        <label><input type="radio" name="gender" value="female"> נקבה</label><br>
+        <label><input type="checkbox" name="subscribe" value="yes">אני מסכים/ה לתנאים</label><br>
+        <label for="docs">קורות חיים</label>
+        <input type="file" name="docs" accept=".pdf,.docx" multiple><br>
+        <label for="color">צבע אהוב</label>
+        <input type="color" name="favcolor" value="#ff0000"><br>
+        <label>קצת עליך</label><br>
+        <textarea name="message" rows="4" cols="30" placeholder="כתוב כאן את ההודעה שלך..."></textarea><br>
+    </form>
+</body>
+</html>
